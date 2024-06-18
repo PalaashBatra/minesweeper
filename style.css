@@ -1,0 +1,24 @@
+#board {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 10px;
+}
+
+.cell {
+  background-color: #ccc;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.cell.revealed {
+  background-color: #fff;
+}
+
+.cell.mine {
+  background-color: #red;
+}
+
+.cell.adjacent-mine {
+  background-color: #yellow;
+}
